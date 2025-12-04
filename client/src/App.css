@@ -1,20 +1,61 @@
-#root {
-  margin: 0;
-  padding: 0;
-  max-width: none;
-  text-align: left;
+/* HERO */
+.hero {
+  background: linear-gradient(
+      rgba(0, 33, 71, 0.55),
+      rgba(0, 33, 71, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1581091019530-1e7e04c43a52?auto=format&fit=crop&w=1500&q=80")
+      center/cover no-repeat;
+  color: white;
+  padding: 7rem 1.5rem;
+  text-align: center;
 }
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+.hero-inner {
+  max-width: 850px;
+  margin: 0 auto;
 }
 
-.card {
-  padding: 2em;
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
 }
 
-.read-the-docs {
-  color: #888;
+.hero h1 span {
+  color: #ff9a3c;
+}
+
+.hero p {
+  margin: 1rem auto 2rem;
+  font-size: 1.25rem;
+  max-width: 650px;
+}
+
+/* BUTTONS */
+.primary-btn {
+  display: inline-block;
+  background: #ff9a3c;
+  color: #0b2840;
+  padding: 0.9rem 2.2rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.primary-btn:hover {
+  filter: brightness(1.1);
+}
+
+/* FORM WRAPPER */
+.form-wrapper {
+  max-width: 700px;
+}
+
+/* FOOTER */
+.footer {
+  background: #0b2840;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
 }

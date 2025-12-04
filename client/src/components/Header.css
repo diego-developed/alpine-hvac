@@ -1,118 +1,51 @@
 .site-header {
   position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
   width: 100%;
+  z-index: 100;
   background: #ffffff;
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.25);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
 }
 
 .header-inner {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 1rem 2.5rem;
-  min-height: 80px;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-/* left section */
-
-.header-left {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.header-logo img {
+.header-left img {
   height: 42px;
-  width: auto;
-  display: block;
 }
-
-/* center nav fills remaining space */
 
 .header-nav {
-  flex: 1 1 auto;
+  flex: 1;
   display: flex;
   justify-content: center;
-  gap: 6rem;
+  gap: 3rem;
 }
 
 .header-nav a {
   color: #10295b;
-  text-decoration: none;
-  font-size: 1.75rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
-  padding: 0.25rem 0;
+  transition: 0.2s ease;
 }
 
 .header-nav a:hover {
-  color: #ffffff;
+  color: #ff9a3c;
 }
-
-/* right section */
-
-.header-right {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-/* main cta button */
 
 .header-cta {
-  padding: 0.65rem 1.9rem;
-  border-radius: 999px;
   background: #ff9a3c;
+  padding: 0.65rem 1.9rem;
+  border-radius: 50px;
   color: #0b2840;
-  text-decoration: none;
   font-weight: 700;
-  font-size: 0.98rem;
-  white-space: nowrap;
 }
 
 .header-cta:hover {
-  filter: brightness(1.05);
-}
-
-/* basic responsive tweaks */
-
-@media (max-width: 900px) {
-  .header-inner {
-    padding: 0.75rem 1.25rem;
-    gap: 1rem;
-  }
-
-  .header-nav {
-    gap: 1.5rem;
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .header-inner {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .header-left {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .header-nav {
-    order: 3;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .header-right {
-    order: 2;
-  }
+  filter: brightness(1.08);
 }
